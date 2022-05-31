@@ -3,6 +3,14 @@
 ## Purpose
 DNA/RNA binding protein/enzymes are critical in biological functions. Some can be engineered to enhance or decrease the specificity. There are also issues about off targeting when we do gene therapy. Here we provide a magical and easy way to understand your protein binding profile which is able to save your time and money. This tutorial provides detail about experimental design and source codes for next generation sequence data analysis. 
 
+## Citation
+
+If you think this tutorial is useful for you, you are welcome to cite the two following publications. I will be really appreciated.
+
+1. [Lin HC, Zhao J, Niland CN, Tran B, Jankowsky E, Harris ME. Analysis of the RNA Binding Specificity Landscape of C5 Protein Reveals Structure and Sequence Preferences that Direct RNase P Specificity. Cell Chem Biol. 2016 Oct 20;23(10):1271-1281. doi: 10.1016/j.chembiol.2016.09.002. Epub 2016 Sep 29. PMID: 27693057; PMCID: PMC5088717.](https://pubmed.ncbi.nlm.nih.gov/27693057/)
+
+1. [Jain N, Lin HC, Morgan CE, Harris ME, Tolbert BS. Rules of RNA specificity of hnRNP A1 revealed by global and quantitative analysis of its affinity distribution. Proc Natl Acad Sci U S A. 2017 Feb 28;114(9):2206-2211. doi: 10.1073/pnas.1616371114. Epub 2017 Feb 13. PMID: 28193894; PMCID: PMC5338530.](https://pubmed.ncbi.nlm.nih.gov/28193894/) 
+
 ## Things you will need:
 - Your proteins - you need your protein or enzyme to finish the measurement however they are expressed or purified.
 
@@ -101,9 +109,10 @@ You can find the R code [here](https://github.com/hsuanchunlin/HiTS-EQ/blob/mast
 
 You can find more information in [my github repository](https://github.com/hsuanchunlin/HiTS-EQ). 
 
-## Finding the rules (PWM/PWM+IC)
+## Discover the dataset
 
-Nucleotides can collaborate each other. Therefore we employed liner regression model to implement position weight matrix (PWM) and PWM + interation couple (PWM + IC). For this purpose, 
-
-
+1. You can use ViennaRNA to predict those secondary structures and might find something magical. [The ViennaRNA Package](https://www.tbi.univie.ac.at/RNA/)
+2. We also created PWM, PWM+IC, and data visualization tools. You might think those R codes are useful for mining your data. [PWM/PWM+IC model](https://github.com/hsuanchunlin/PWM_IC_model) and [visualization of PWM/PWM+IC model](https://github.com/hsuanchunlin/Data-Visualization-PWM-PWMIC)
+More complete tutorial of this visualization method is on the way!
+3. You also can use Natural language processing (NLP) skills to discover the dataset. Here I used the Embedding and Bi-LSTM methods to group RNA sequences. [Here](https://github.com/hsuanchunlin/Embedding-RNA)
 
