@@ -54,9 +54,9 @@ Here N indicates the number of the randomized nucleotides in your binding region
 After getting your data in fastq or fq form after demultiplexing, it’s time to get your binding profile.
 
 ### Filter the sequence
-When you get your sequence result, not all the sequences are what you want - we need to filter it by specific sequence. You can define your own pattern sequence and use **harris_filter-current.py** to filter it.
+When you get your sequence result, not all the sequences are what you want - we need to filter it by specific sequence. You can define your own pattern sequence and use [harris_filter-current.py](harris_filter-current.py) to filter it.
 
-1. Change the hyparameter in **harris_filter-current.py** for your need. They are 
+1. Change the hyparameter in [harris_filter-current.py](harris_filter-current.py) for your need. They are 
 	- test_seq -> This is the sequence as your filter.
 	- sequence_start -> Where the sequence start. For example, if your filter sequence start at 3, then the value is 2 because python starts at 0 not 1.
 1. After setting up those parameters, put your fastq or fq files with the python code in the same folder.
@@ -66,7 +66,7 @@ When you get your sequence result, not all the sequences are what you want - we 
 python harris_filter.py <fastq file> <modified fastq file>
 ``` 
 ### Get the count for each sequence variant
-The next step is to get the count for each sequence varient from the exported file at last step. Here we need to use **harris_report_auto.py** to get the counts.
+The next step is to get the count for each sequence varient from the exported file at last step. Here we need to use [harris_report_auto.py](harris_report_auto.py) to get the counts.
 
 ```python
 python harris_report.py <your fastq file> <your export file in tab form> <the location of your first random nucleotide> <how many randomized nucleotides> <included two random sequence or not>
