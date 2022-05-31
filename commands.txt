@@ -1,0 +1,6 @@
+python harris_filter.py pot_move.fastq pot_filt.fastq
+python harris_report_auto.py pot_filt.fastq PBS12-P2 17 6 1
+
+mv harris_filter_PBS34.txt harris_filter_PBS34.py
+python harris_filter_PBS34.py pot_move.fastq pot34_filt.fastq
+python harris_report_auto.py pot34_filt.fastq PBS34-P2 17 6 1
