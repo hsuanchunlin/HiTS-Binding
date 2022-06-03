@@ -3,6 +3,30 @@
 ## Purpose
 DNA/RNA binding protein/enzymes are critical in biological functions. Some can be engineered to enhance or decrease the specificity. There are also issues about off targeting when we do gene therapy. Here we provide a magical and easy way to understand your protein binding profile which is able to save your time and money. This tutorial provides detail about experimental design and source codes for next generation sequence data analysis. 
 
+For Experiment:
+
+```mermaid
+graph LR;
+
+	A[Prepare protein] --> C[Randomize sequences];
+	B[Prepare DNA/RNA template] --> C;
+	C --> D[Binding assay];
+	D -- Separate unbound substrates --> E[NGS];
+	E --> F[Data processing];
+```
+For Data processing:
+
+```mermaid
+graph LR;
+A[NGS result] --> B[Filter the sequence] 
+B --> C[Get the count for each sequence variant]
+C --> D[Calculate all Ka]
+D --modeling-->E[PWM]
+D --modeling-->F[PWM+IC]
+D --modeling-->G[NLP Embedding]
+D --modeling-->H[Transformer]
+```
+
 ## Citation
 
 If you think this tutorial is useful for you, you are welcome to cite the two following publications. I will be really appreciated.
@@ -115,4 +139,4 @@ You can find more information in [my github repository](https://github.com/hsuan
 2. We also created PWM, PWM+IC, and data visualization tools. You might think those R codes are useful for mining your data. [PWM/PWM+IC model](https://github.com/hsuanchunlin/PWM_IC_model) and [visualization of PWM/PWM+IC model](https://github.com/hsuanchunlin/Data-Visualization-PWM-PWMIC)
 More complete tutorial of this visualization method is on the way!
 3. You also can use Natural language processing (NLP) skills to discover the dataset. Here I used the Embedding and Bi-LSTM methods to group RNA sequences. [Here](https://github.com/hsuanchunlin/Embedding-RNA)
-
+4. Self-Attention (Transformer) model provide a way to see each sequence variant individually. The repository is [here](https://github.com/hsuanchunlin/Transformer-RNA).
