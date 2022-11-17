@@ -1,4 +1,4 @@
-# Get the whole picture of your DNA/RNA binding protein/enzyme specificity in just one easy experiment - Experimental design and Data analysis
+# Get the whole picture of your DNA/RNA binding protein/enzyme specificity in just one easy experiment - Experimental design and Data analysis (HiTS-EQ/HTS-EQ)
 
 ## Purpose
 DNA/RNA binding protein/enzymes are critical in biological functions. Some can be engineered to enhance or decrease the specificity. There are also issues about off targeting when we do gene therapy. Here we provide a magical and easy way to understand your protein binding profile which is able to save your time and money. This tutorial provides detail about experimental design and source codes for next generation sequence data analysis. 
