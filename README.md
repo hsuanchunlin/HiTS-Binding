@@ -78,6 +78,12 @@ Step 4 NGS sample preparation - Just follow the sample kit instruction to prepar
 ###There are some pixie dusts might be useful for you:
 
 - When designing PCR primers for amplify your sample, make sure to use qPCR to check the amplification curve. Sometimes primers can be weird when your sample concentration is low or extremely low.
+- When use PCR to amplify samples, make sure the cycle number is in the **linear** amplification range. We want the samples amplified liearly.
+
+<img src="images/image03.jpeg"
+alt = "PCR amplification curve linear indication"
+width = 150/>
+
 - Before sending to NGS, the samples can be normalized to similar concentration for sequencing purpose.
 - When you design the randomize sequence, I would suggest for each sequence in the control group (no protein added), the final read should above 300~500 to make sure the quality of the result. You can calculate it roughly by (Total Reads) / (4^N).
 Here N indicates the number of the randomized nucleotides in your binding region.
